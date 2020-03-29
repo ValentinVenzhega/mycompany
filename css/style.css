@@ -523,33 +523,6 @@ footer a {
   padding-right: 13px;
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  left: 43%;
-  bottom: 50%;
-  z-index: 3;
-  background: #fdfcfc;
-  width: 280px;
-  height: 160px;
-  border: 2px solid #c5bdbd;
-  color: #000000;
-}
-
-.overlay h2 {
-  position: absolute;
-  top: 25%;
-  left: 10%;
-}
-
-.popup-close {
-  left: 92%;
-  top: 3%;
-  font-size: 20px;
-  position: absolute;
-  cursor: pointer;
-}
-
 @media (max-width: 1199px) {
   .header-box ul {
     padding-left: 0;
