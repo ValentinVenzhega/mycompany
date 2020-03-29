@@ -1,0 +1,96 @@
+
+.header
+	 background: #000000
+	 padding: 41px 0 0 0
+	 height: 140px
+	 &-box
+			font-size: 24px
+			font-family: 'Open Sans ExtraBold', sans-serif
+			font-weight: 700
+			text-transform: uppercase
+			
+			& ul
+				 display: flex
+				 justify-content: space-around   
+				 list-style: none
+				 & li
+						
+					font-size: 14px
+					font-family: 'Open Sans Bold', sans-serif
+					text-transform: uppercase
+					cursor: pointer
+					& a
+					color: #ffffff
+					& a:hover
+							padding-bottom: 12px
+							border-bottom: 3px solid #fcac45
+
+.menu
+	display: none
+	position: fixed
+	top: 5%
+	left: 11%
+	text-transform: uppercase
+	width: 250px
+	height: 275px
+	background: #000000
+	opacity: 0.9
+	z-index: 3
+	text-align: center
+	&_active
+		display: block
+
+	
+	& ul
+		list-style: none
+		line-height: 45px
+		cursor: pointer
+		padding-left: 0
+		margin-top: 0
+		margin-bottom: 0
+		& li
+			border-bottom: 1px solid #ffffff
+			&:last-child
+				border-bottom: 0
+			&:hover
+				background-color: rgba(255, 255, 255, 0.1)
+	& a
+		text-decoration: none
+	
+.menu-link
+	display: none
+	position: fixed
+	top: 3%
+	left: 2%
+	background: #000000
+	opacity: 0.9
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	z-index: 5
+	span, span:before, span:after
+		display: block
+		position: absolute
+		width: 20px
+		height: 3px
+		background: #ffffff
+		top: 49%
+		left: 31%
+	span:before
+			transition: all 0.2s
+			content: ''
+			margin-top: -6px 
+			margin-left: -6px
+	span:after
+		transition: all 0.2s
+		content: ''
+		margin-top: 4px
+		margin-left: -6px
+	&_active span
+			background-color: transparent
+			&:before
+				transform: rotate(45deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-45deg)
+				margin-top: 0
