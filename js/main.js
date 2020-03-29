@@ -16,18 +16,5 @@ $(document).ready(function() {
 
 });
 
-$(document).ready(function() {
-
-    $('.popup__btn').on("click", function(){
-        $('.overlay').fadeIn();
-        return false;
-    });
-
-    $('.popup-close').on("click", function(){
-        $('.overlay').fadeOut();
-    });
-
-});
-
 
  
